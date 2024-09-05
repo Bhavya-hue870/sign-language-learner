@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Language to English/Gujarati Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sign Language to English/Gujarati Converter</h1>
+    </header>
+    
+    <main>
+        <!-- Upload Section -->
+        <section class="converter">
+            <h2>Upload Your Sign Language Video</h2>
+            <input type="file" id="upload-video" accept="video/*">
+            <button onclick="uploadVideo()">Upload and Convert</button>
+        </section>
+
+        <!-- Output Text Section -->
+        <section class="output">
+            <h2>Converted Text</h2>
+            <p id="converted-text">Your converted text will appear here...</p>
+        </section>
+        
+        <!-- Sound Playback Section -->
+        <section class="sound-system">
+            <h2>Sound Playback</h2>
+            <button onclick="playSound()">Play Sound</button>
+            <audio id="sound" src="path/to/your/audio/file.mp3" type="audio/mpeg"></audio>
+        </section>
+
+        <!-- Images and Videos Section -->
+        <section class="images-and-videos">
+            <h2>Example Signs</h2>
+            <img src="path/to/your/image.png" alt="Example Sign" aria-describedby="description-of-sign">
+            <video controls>
+                <source src="path/to/your/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Sign Language Converter</p>
+    </footer>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
